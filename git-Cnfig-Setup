@@ -1,0 +1,16 @@
+
+Terminal Commands:
+Set Git Username: git config --global user.name "Your name here"
+Set Git Email: git config --global user.email "your_email@example.com"
+Set Git Commit Message Editor: git config --global core.editor "code --wait"
+Check for Existing SSH Key: ls ~/.ssh
+Generate SSH Key: ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+Copy SSH Key (Replace the '⋖' symbol with an actual less than symbol):
+    Windows:
+        clip ⋖ ~/.ssh/id_rsa.pub
+    Mac:
+        pbcopy ⋖ ~/.ssh/id_rsa.pub
+    Linux:
+        sudo apt-get install xclip
+        xclip -sel clip ⋖ ~/.ssh/id_rsa.pub
+Verify SSH Key Setup: ssh -T git@github.com
